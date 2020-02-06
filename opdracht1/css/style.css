@@ -2,6 +2,7 @@ html{
   box-sizing: border-box; /* https://css-tricks.com/box-sizing/ */
   background:#eee;
   background: url("../img/flagF4D.png") center / 5em;
+    background-attachment: fixed;
 }
 *, *:before, *:after {
   box-sizing: inherit;
