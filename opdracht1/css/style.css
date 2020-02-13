@@ -1,74 +1,67 @@
 body {
-    background-color: #202020;
+   background-color: #202020;
 }
 
+/* de lijst met films */
+article {
+   display: flex;
+}
+
+figure {
+   margin:1em;
+}
+
+figure img {
+   display:block;
+   width:100%;
+}
+
+/* mijn lijst met films */
+button {
+   height: 5em;
+   width: 11em;
+   color: white;
+   font-family: 'Press Start 2P', cursive;
+   margin: 0 auto;
+   display: block;
+   background-color: transparent;
+   border: none;
+}
 
 .myList {
-    background-color: black;
-    width: 60%;
-    height: 50vh;
-    margin: 0 auto;
+   position:relative;
+   flex-wrap: wrap;
+   background-color: black;
+   width: 60%;
+   min-height: 6em;
+   margin: 0 auto;
+   padding:.5em;
+   }
 
-
-
-}
-
-. .items {
-    display: flex;
-    flex-direction: row;
-}
-
-
-p {
-    color: white;
-    text-align: center;
-    margin: 0 2em;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 1.3em;
-
-
-
-
-
-}
-
-
-
-
-
-
-.icon1 {
-    height: 20vh;
-    margin: 2em 2em;
-}
-
-
-button {
-
-    height: 5em;
-    width: 11em;
-    color: white;
-    font-family: 'Press Start 2P', cursive;
-    margin: 0 auto;
-    display: block;
-    background-color: transparent;
-    border: none;
-}
-
-
-article {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row
-
-}
-
-.posters {
-    height: 60vh;
-
-}
-
-.myList .posters {
+.myList figure img {
     height: auto;
     width: 6em;
+}
+
+
+/* zero state */
+/* als .my:ist leeg is staat er met ::before een tekstje */
+.myList::before {
+   content:"Drag your movies here!";
+   position:absolute;
+   width:100%;
+   left:0;
+   top:2.5%;
+   
+   font-size: .5em;
+   font-family: 'Press Start 2P', cursive;
+   text-align:center;
+   color:white;
+   
+   transition:.25s;
+}
+
+.myList:empty::before {
+   top:calc(50% - .65em);
+   font-size: 1.3em;
 }
