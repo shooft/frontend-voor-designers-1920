@@ -1,16 +1,74 @@
-html{
-  box-sizing: border-box; /* https://css-tricks.com/box-sizing/ */
-  background:#eee;
-  background: url("../img/flagF4D.png") center no-repeat;
+body {
+    background-color: #202020;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+
+
+.myList {
+    background-color: black;
+    width: 60%;
+    height: 50vh;
+    margin: 0 auto;
+
+
+
 }
-body{
-  max-width: 30em;
-  margin: 1em auto;
-  padding: 1em;
-  background: #fff;
-  border-radius: 1em;
-  box-shadow: 0.5em 0.5em 0.5em rgba(68,68,68,0.6);
+
+. .items {
+    display: flex;
+    flex-direction: row;
+}
+
+
+p {
+    color: white;
+    text-align: center;
+    margin: 0 2em;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.3em;
+
+
+
+
+
+}
+
+
+
+
+
+
+.icon1 {
+    height: 20vh;
+    margin: 2em 2em;
+}
+
+
+button {
+
+    height: 5em;
+    width: 11em;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    margin: 0 auto;
+    display: block;
+    background-color: transparent;
+    border: none;
+}
+
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row
+
+}
+
+.posters {
+    height: 60vh;
+
+}
+
+.myList .posters {
+    height: auto;
+    width: 6em;
 }
